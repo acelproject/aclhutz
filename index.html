@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acelhutz</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header
+      class="absolute bg-bglight left-0 top-0 flex w-full h-[70px] items-center transition-all ease-linear"
+    >
+      <div class="container w-10/12 mx-auto">
+        <div class="relative flex items-center justify-between">
+          <div class="brand text-2xl font-bold flex items-center">
+            <span class="text-secondary"
+              ><i class="fas fa-pizza-slice"></i
+            ></span>
+            acl<span class="text-primary">Hutz.</span>
+          </div>
+          <div
+            class="flex items-center px-4"
+            data-aos="fade-up"
+            data-aos-delay="2500"
+          >
+            <!-- burger menu dark mode button on android -->
+            <!-- end burger menu dark mode button on android -->
+            <nav
+              id="nav-menu"
+              class="absolute right-[0px] top-full hidden w-full rounded-lg shadow-lg transition ease-in-out lg:static lg:flex lg:translate-x-[-0px] lg:rounded-none lg:shadow-none"
+            >
+              <ul class="items block lg:flex items-center">
+                <li class="group text-primary">
+                  <a
+                    href="#allmenus"
+                    class="mx-8 item flex w-full font-semibold"
+                    >All Menus</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#pizza"
+                    class="mx-8 item text-mydark flex font-semibold"
+                    >Pizza</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#pasta"
+                    class="mx-8 item text-mydark flex w-full font-semibold"
+                    >Pasta</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#nasi"
+                    class="mx-8 item text-mydark flex w-full font-semibold"
+                    >Nasi</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#minuman"
+                    class="mx-8 item text-mydark flex w-full font-semibold"
+                    >Minuman</a
+                  >
+                </li>
+                <li class="flex item-center">
+                  <!-- Darkmode -->
+                  <div
+                    id="dark-mode"
+                    class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-white p-2"
+                  >
+                    <input
+                      type="checkbox"
+                      id="input-dark"
+                      class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
+                    />
+                    <div
+                      id="dark-icon"
+                      class="absolute flex translate-y-[14px] flex-col transition ease-linear"
+                    >
+                      <span class="light text-lg text-primary">
+                        <i class="fas fa-sun"></i>
+                      </span>
+                      <span class="light text-lg text-primary"
+                        ><i class="fas fa-moon"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- End Darkmode -->
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- Menus -->
+    <section class="pt-24 menus" id="menus">
+      <div class="container mx-auto">
+        <h1 class="title text-4xl lg:mx-28 mb-6 font-bold">All Menus</h1>
+        <div
+          class="w-full lg:flex lg:flex-wrap gap-4 justify-center data-menus"
+        >
+        <div
+      class="card w-full h-max lg:w-1/5 bg-white shadow-lg overflow-hidden"
+    >
+      data masih kosong
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/71bba478e7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
