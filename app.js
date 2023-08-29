@@ -40,27 +40,29 @@ xhr.open("GET", "./data/pizza.json", true);
 xhr.send();
 
 
+
 const menuItems = document.querySelector(".items");
 // menu active fungtion
-  window.onload = () => {
-    menuItems.addEventListener("click", (e) => {
-      if (e.target.classList.contains("item")) {
-        menuItems.querySelector(".text-primary").classList.remove("text-primary");
-        e.target.classList.add("text-primary");
-      }
+window.onload = () => {
+  menuItems.addEventListener("click", (e) => {
+    if (e.target.classList.contains("item")) {
+      menuItems.querySelector(".text-primary").classList.remove("text-primary");
+      e.target.classList.add("text-primary");
+    }
 
-      // fillter menu by category
-      let category = e.target.innerText;
-      document.querySelector(".menus .title").innerHTML = category;
-    });
-  };
+    // fillter menu by category
+    let category = e.target.innerText;
+    document.querySelector(".menus .title").innerHTML = category;
+  });
+};
+
 
 
 // menu bars
-const bars = document.querySelector('.bars');
-const menuPhone = document.querySelector('.menu-phone');
+const bars = document.querySelector(".bars");
+const menuPhone = document.querySelector(".menu-phone");
 
-bars.addEventListener('click', ()=>{
-  menuPhone.classList.toggle('active');
+bars.addEventListener("click", () => {
+  menuPhone.classList.toggle("active");
   // alert('ok')
-})
+});

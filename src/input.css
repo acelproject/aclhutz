@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.menu-phone.active {
+  @apply translate-y-1;
+}
 
-.menu-phone.active{
-    @apply translate-y-16;
+ul li a span {
+  @apply lg:hidden mr-3;
 }
