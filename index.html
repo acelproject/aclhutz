@@ -8,30 +8,6 @@
   </head>
   <body>
     <!-- navbar -->
-
-        <!-- Darkmode -->
-        <!-- <div
-          id="dark-mode"
-          class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-white p-2"
-        >
-          <input
-            type="checkbox"
-            id="input-dark"
-            class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
-          />
-          <div
-            id="dark-icon"
-            class="absolute flex translate-y-[14px] flex-col transition ease-linear"
-          >
-            <span class="light text-lg text-primary">
-              <i class="fas fa-sun"></i>
-            </span>
-            <span class="light text-lg text-primary"
-              ><i class="fas fa-moon"></i>
-            </span>
-          </div>
-        </div> -->
-        <!-- End Darkmode -->
       </li>
     </div>
     <!-- end menu on anroid -->
@@ -55,13 +31,13 @@
             <!-- end burger menu dark mode button on android -->
             <nav
               id="nav-menu"
-              class="absolute right-[0px] top-full w-full rounded-lg shadow-lg transition ease-in-out lg:static lg:flex lg:translate-x-[-0px] lg:rounded-none lg:shadow-none"
+              class="absolute right-[0px] top-full  w-full rounded-lg shadow-lg transition ease-in-out lg:static lg:flex lg:translate-x-[-0px] lg:rounded-none lg:shadow-none"
             >
-              <ul class="items menu-phone px-8 lg:px-0 flex flex-col lg:flex items-center lg:items-center z-80 lg:py-0 py-7 lg:bg-transparent bg-white border border-mydark fixed left-0 justify-center gap-5 lg:relative w-full bottom-0 transition-all translate-y-72">
+              <ul class="items menu-phone px-8 lg:px-0  flex flex-col lg:flex-row lg:flex items-center lg:items-center z-80 lg:py-0 py-7 lg:bg-transparent bg-white border lg:border-transparent border-mydark fixed left-0 justify-center gap-5 lg:relative w-full bottom-0 transition-all translate-y-72 lg:translate-y-0">
                 <li class="group text-primary">
                   <a
                     href="#allmenus"
-                    class="lg:mx-8 item flex items-center  font-semibold"
+                    class="lg:mx-8 item flex items-center  lg:font-medium font-semibold lg:text-sm text-md"
                     ><span class=""><i class="fas fa-list"></i
                       ></span>All Menus</a
                   >
@@ -69,7 +45,7 @@
                 <li class="group">
                   <a
                     href="#pizza"
-                    class="lg:mx-8 item text-mydark flex items-center font-semibold"
+                    class="lg:mx-8 item text-mydark flex items-center lg:font-medium font-semibold lg:text-sm text-md"
                     ><span><i class="fas fa-pizza-slice"></i
                       ></span>Pizza</a
                   >
@@ -77,7 +53,7 @@
                 <li class="group">
                   <a
                     href="#pasta"
-                    class="lg:mx-8 item text-mydark flex w-full font-semibold"
+                    class="lg:mx-8 item text-mydark flex w-full lg:font-medium font-semibold lg:text-sm text-md"
                     ><span><i class="fas fa-bacon"></i
                       ></span>Pasta</a
                   >
@@ -85,14 +61,14 @@
                 <li class="group">
                   <a
                     href="#nasi"
-                    class="lg:mx-8 item text-mydark flex w-full items-center font-semibold"
+                    class="lg:mx-8 item text-mydark flex w-full items-center lg:font-medium font-semibold lg:text-sm text-md"
                     ><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M0 192c0-35.3 28.7-64 64-64c.5 0 1.1 0 1.6 0C73 91.5 105.3 64 144 64c15 0 29 4.1 40.9 11.2C198.2 49.6 225.1 32 256 32s57.8 17.6 71.1 43.2C339 68.1 353 64 368 64c38.7 0 71 27.5 78.4 64c.5 0 1.1 0 1.6 0c35.3 0 64 28.7 64 64c0 11.7-3.1 22.6-8.6 32H8.6C3.1 214.6 0 203.7 0 192zm0 91.4C0 268.3 12.3 256 27.4 256H484.6c15.1 0 27.4 12.3 27.4 27.4c0 70.5-44.4 130.7-106.7 154.1L403.5 452c-2 16-15.6 28-31.8 28H140.2c-16.1 0-29.8-12-31.8-28l-1.8-14.4C44.4 414.1 0 353.9 0 283.4z"/></svg></span>Nasi</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#minuman"
-                    class="lg:mx-8 item text-mydark flex w-full font-semibold"
+                    class="lg:mx-8 item text-mydark flex w-full lg:font-medium font-semibold lg:text-sm text-md"
                     ><span><i class="fas fa-wine-glass"></i></span>Minuman</a
                   >
                 </li>
@@ -113,16 +89,28 @@
     <!-- Menus -->
     <section class="pt-24 menus" id="menus">
       <div class="container mx-auto">
-        <h1 class="title text-4xl lg:mx-28 mx-5 mb-3 font-bold">All Menus</h1>
+        <h1 class="title text-4xl lg:mx-20 mx-5 mb-4 font-bold">All Menus</h1>
         <div
           class="w-full p-5 lg:p-0 lg:flex lg:flex-wrap gap-4 justify-center data-menus"
         >
         <div
-      class="card w-full h-max lg:w-1/5 bg-white shadow-lg overflow-hidden"
-    >
-      data masih kosong
-      </div>
+          class="card w-full h-max lg:w-1/5 bg-white shadow-lg overflow-hidden"
+        >
+          <img src="data/img/pizza/${i.gambar}" class="w-full" alt="" />
+          <div class="dec p-5">
+            <h1 class="text-2xl font-semibold">${i.nama}</h1>
+            <p class="py-2 text-base">
+            ${i.deskripsi}
+            </p>
+            <p class="text-xl font-semibold">Rp. ${i.harga} ,-</p>
+            <button
+              class="mt-3 rounded-md font-normal bg-secondary p-2 text-white"
+            >
+              Beli sekarang
+            </button>
+          </div>
         </div>
+        <div>
       </div>
     </section>
 
