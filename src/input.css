@@ -9,3 +9,8 @@
 ul li a span {
   @apply lg:hidden mr-3;
 }
+
+.menus .title{
+@apply text-center;
+}
+
