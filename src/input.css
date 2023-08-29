@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.menu-phone.active{
+    @apply translate-y-16;
+}

@@ -8,8 +8,72 @@
   </head>
   <body>
     <!-- navbar -->
+    <!-- menu on anroid -->
+    <div class="menu-phone items fixed z-80 py-5 bg-white w-full block lg:hidden items-center  shadow-md list-none -translate-y-56 transition-all">
+      <li class="group text-primary">
+        <a
+          href="#allmenus"
+          class="mx-8 item flex w-full font-semibold"
+          >All Menus</a
+        >
+      </li>
+      <li class="group">
+        <a
+          href="#pizza"
+          class="mx-8 item text-mydark flex font-semibold"
+          >Pizza</a
+        >
+      </li>
+      <li class="group">
+        <a
+          href="#pasta"
+          class="mx-8 item text-mydark flex w-full font-semibold"
+          >Pasta</a
+        >
+      </li>
+      <li class="group">
+        <a
+          href="#nasi"
+          class="mx-8 item text-mydark flex w-full font-semibold"
+          >Nasi</a
+        >
+      </li>
+      <li class="group">
+        <a
+          href="#minuman"
+          class="mx-8 item text-mydark flex w-full font-semibold"
+          >Minuman</a
+        >
+      </li>
+      <li class="flex item-center">
+        <!-- Darkmode -->
+        <div
+          id="dark-mode"
+          class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-white p-2"
+        >
+          <input
+            type="checkbox"
+            id="input-dark"
+            class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
+          />
+          <div
+            id="dark-icon"
+            class="absolute flex translate-y-[14px] flex-col transition ease-linear"
+          >
+            <span class="light text-lg text-primary">
+              <i class="fas fa-sun"></i>
+            </span>
+            <span class="light text-lg text-primary"
+              ><i class="fas fa-moon"></i>
+            </span>
+          </div>
+        </div>
+        <!-- End Darkmode -->
+      </li>
+    </div>
+    <!-- end menu on anroid -->
     <header
-      class="absolute bg-bglight left-0 top-0 flex w-full h-[70px] items-center transition-all ease-linear"
+      class="fixed bg-bglight left-0 -top-1 flex w-full h-[70px] items-center transition-all ease-linear"
     >
       <div class="container w-10/12 mx-auto">
         <div class="relative flex items-center justify-between">
@@ -66,33 +130,14 @@
                     >Minuman</a
                   >
                 </li>
-                <li class="flex item-center">
-                  <!-- Darkmode -->
-                  <div
-                    id="dark-mode"
-                    class="relative ml-8 flex h-7 w-7 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-white p-2"
-                  >
-                    <input
-                      type="checkbox"
-                      id="input-dark"
-                      class="absolute left-1 top-1 z-10 h-5 w-5 cursor-pointer opacity-0"
-                    />
-                    <div
-                      id="dark-icon"
-                      class="absolute flex translate-y-[14px] flex-col transition ease-linear"
-                    >
-                      <span class="light text-lg text-primary">
-                        <i class="fas fa-sun"></i>
-                      </span>
-                      <span class="light text-lg text-primary"
-                        ><i class="fas fa-moon"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <!-- End Darkmode -->
-                </li>
               </ul>
             </nav>
+            <div class="bars flex item-center lg:hidden">
+              <!-- burger button -->
+              <i class="fas fa-bars"></i
+                >
+              <!-- End burger button -->
+            </div>
           </div>
         </div>
       </div>
@@ -115,6 +160,7 @@
       </div>
     </section>
 
+    
     <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/71bba478e7.js"
