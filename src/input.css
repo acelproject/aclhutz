@@ -11,6 +11,12 @@ ul li a span {
 }
 
 .menus .title{
-@apply text-center;
+@apply mx-auto ;
+}
+
+.menus .title:after{
+  @apply bg-primary  block bottom-0 mt-2 w-1/2 mx-auto rounded-xl;
+  content:"";
+  height :3px;
 }
 

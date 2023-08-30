@@ -57,7 +57,9 @@ window.onload = () => {
     document.querySelector(".menus .title").innerHTML = category;
 
     if (category == "All Menus") {
-      viewAllMenus();
+      const setloading = ' <div class="text-slate-600 text-2xl">... Sedang memuat ...</div>';
+      containerMenus.innerHTML = setloading;
+      setTimeout(viewAllMenus,1000);
       return;
     }
 
@@ -92,8 +94,16 @@ window.onload = () => {
     </div>
       `;
         });
-
-        containerMenus.innerHTML = content;
+    
+        
+        const setloading = '<div class="text-slate-600 text-2xl w-max mx-auto">... Sedang memuat ...</div>';
+        containerMenus.innerHTML = setloading;
+        
+        const readyContent = ()=>{
+          containerMenus.innerHTML = content;
+        }
+        setTimeout(readyContent,1000);
+        
       }
     };
     xhr.open("GET", "./data/pizza.json", true);
